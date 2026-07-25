@@ -1,0 +1,13 @@
+{
+  "name": "aethercalc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A calculator built from HTML forms and CSS arithmetic. No JavaScript.",
+  "scripts": {
+    "build": "python build.py",
+    "test": "node verify.js"
+  },
+  "devDependencies": {
+    "puppeteer": "^24.36.1"
+  }
+}
