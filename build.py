@@ -50,7 +50,7 @@ HTML = """<!doctype html>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <title>aethercalc</title>
-<meta name=description content="aethercalc \u2014 html forms and css arithmetic, lighter than air. no javascript.">
+<meta name=description content="aethercalc \u2014 html forms and css arithmetic, lighter than air, no javascript.">
 <meta name=theme-color content=#0c1a2b media="(prefers-color-scheme:dark)">
 <meta name=theme-color content=#eef7fe media="(prefers-color-scheme:light)">
 <style>
@@ -110,7 +110,7 @@ p{margin:.7rem .2rem 0;font-size:.72rem;color:var(--d)}
 <div class=w>
 <div class=h><span>aethercalc</span><b>0 KB JS</b></div>
 <form action=#>
-<h1>welcome, user<i>_</i></h1>
+<h1>welcome<i>_</i></h1>
 <output>
 <span class=q><i class=x></i><i class=o></i><i class=y></i></span>
 <span class=r><u>=</u><i class=z></i><i class=v></i></span>
@@ -121,7 +121,7 @@ p{margin:.7rem .2rem 0;font-size:.72rem;color:var(--d)}
 <div class=col><em>second</em><div class=n>__B__</div></div>
 </div>
 </form>
-<p>__SIZE__ kilobytes of markup, 0 bytes of script. Sums are computed by CSS counters and an HTML form. Counters print whole numbers only, so division answers exactly and hands back a remainder.</p>
+<p>__SIZE__ kilobytes of markup, 0 bytes of script. Sums are computed by CSS counters and an HTML form.</p>
 </div>
 </body>
 </html>
