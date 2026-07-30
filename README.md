@@ -55,3 +55,15 @@ npm test
 ```
 
 Covers 20 cases across all five operations, asserts the page ships no `<script>` tags, and checks that nothing overflows at 320px.
+
+## Deploying to StuntCamp
+
+StuntCamp builds AetherCalc from the exact commit pinned in
+[`registry/apps/aethercalc.json`](https://github.com/kypflug/stuntcamp/blob/main/registry/apps/aethercalc.json).
+Merging here does not update the live app automatically.
+
+After an AetherCalc change merges:
+
+1. Get the full commit SHA from AetherCalc's `main` branch.
+2. Update `build.ref` in StuntCamp's `registry/apps/aethercalc.json` to that SHA.
+3. Open and merge a StuntCamp pull request. Its validation workflow builds the pinned revision; merging triggers the deployment.
