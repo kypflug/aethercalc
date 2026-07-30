@@ -79,6 +79,9 @@ async function readout(page) {
   const scripts = await page.$$eval('script', (n) => n.length);
   if (scripts !== 0) fail(`page ships ${scripts} script tag(s)`);
 
+  const favicon = await page.$eval('link[rel="icon"]', (link) => link.href);
+  if (!favicon.endsWith('/favicon.svg')) fail(`unexpected favicon URL: ${favicon}`);
+
   for (const [op, a, b, want] of CASES) {
     await page.click(`label[for=${op}]`);
     await page.click(`label[for=a${a}]`);
