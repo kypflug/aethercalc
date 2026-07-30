@@ -50,6 +50,7 @@ HTML = """<!doctype html>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <title>aethercalc</title>
+<link rel=icon href=favicon.svg type=image/svg+xml>
 <meta name=description content="aethercalc \u2014 html forms and css arithmetic, lighter than air, no javascript.">
 <meta name=theme-color content=#0c1a2b media="(prefers-color-scheme:dark)">
 <meta name=theme-color content=#eef7fe media="(prefers-color-scheme:light)">
